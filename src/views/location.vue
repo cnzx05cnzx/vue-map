@@ -1,5 +1,5 @@
 <template>
-  <div class="location">
+  <div style="text-align: center">
     <h1>ip定位</h1>
     当前地址为：<map-loc></map-loc>
   </div>
@@ -18,7 +18,9 @@ export default {
   components: {
     mapLoc
   },
-
+  created() {
+    console.log("create");
+  }
 
 };
 </script>

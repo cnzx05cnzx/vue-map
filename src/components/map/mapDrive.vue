@@ -1,6 +1,5 @@
 <template>
   <div class="m-map">
-
     <div id="js-container" class="map">正在加载数据 ...</div>
     <div id="panel"></div>
   </div>
@@ -42,7 +41,6 @@ export default {
     // 实例化地图
     initMap() {
       const self = this
-      // 加载PositionPicker，loadUI的路径参数为模块名中 'ui/' 之后的部分
 
       let AMap = this.AMap = window.AMap
 
