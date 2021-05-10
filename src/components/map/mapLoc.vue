@@ -35,7 +35,7 @@ export default {
         function onComplete(data) {
           // data是具体的定位信息
           console.log('定位成功信息：', data);
-          self.$message.success('精准定位成功')
+          alert('精准定位成功')
           self.address=data.formattedAddress
         }
 
@@ -68,7 +68,7 @@ export default {
                 if (status === 'complete' && data.info === 'OK') {
                   // result为对应的地理位置详细信息
                   console.log(data)
-                  self.$message.success('ip定位成功')
+                  alert('ip定位成功')
                   self.address=data.regeocode.formattedAddress
                 }
               })
